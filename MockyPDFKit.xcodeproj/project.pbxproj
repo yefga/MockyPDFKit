@@ -56,15 +56,79 @@
 		8F342C6024D44129000349D8 /* MockyPDFKit */ = {
 			isa = PBXGroup;
 			children = (
-				8F342C6124D44129000349D8 /* AppDelegate.swift */,
-				8F342C6324D44129000349D8 /* SceneDelegate.swift */,
-				8F342C6524D44129000349D8 /* ViewController.swift */,
-				8F342C6724D4412A000349D8 /* Main.storyboard */,
-				8F342C6A24D4412B000349D8 /* Assets.xcassets */,
-				8F342C6C24D4412B000349D8 /* LaunchScreen.storyboard */,
-				8F342C6F24D4412B000349D8 /* Info.plist */,
+				8F342C7C24D441A8000349D8 /* Applications */,
+				8F342C7B24D4419E000349D8 /* Network */,
+				8F342C7A24D44182000349D8 /* Storyboards */,
+				8F342C7924D44179000349D8 /* Views */,
+				8F342C7824D44174000349D8 /* Models */,
+				8F342C7724D4416C000349D8 /* ViewControllers */,
+				8F342C7624D44165000349D8 /* ViewModel */,
+				8F342C7524D4415A000349D8 /* Resources */,
 			);
 			path = MockyPDFKit;
+			sourceTree = "<group>";
+		};
+		8F342C7524D4415A000349D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F342C6A24D4412B000349D8 /* Assets.xcassets */,
+				8F342C6F24D4412B000349D8 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F342C7624D44165000349D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F342C7724D4416C000349D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F342C6524D44129000349D8 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8F342C7824D44174000349D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F342C7924D44179000349D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8F342C7A24D44182000349D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F342C6724D4412A000349D8 /* Main.storyboard */,
+				8F342C6C24D4412B000349D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8F342C7B24D4419E000349D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8F342C7C24D441A8000349D8 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				8F342C6124D44129000349D8 /* AppDelegate.swift */,
+				8F342C6324D44129000349D8 /* SceneDelegate.swift */,
+			);
+			path = Applications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

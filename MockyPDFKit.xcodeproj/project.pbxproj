@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		8F342C6224D44129000349D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C6124D44129000349D8 /* AppDelegate.swift */; };
 		8F342C6424D44129000349D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C6324D44129000349D8 /* SceneDelegate.swift */; };
-		8F342C6624D44129000349D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C6524D44129000349D8 /* ViewController.swift */; };
+		8F342C6624D44129000349D8 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C6524D44129000349D8 /* ListTableViewController.swift */; };
 		8F342C6924D4412A000349D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F342C6724D4412A000349D8 /* Main.storyboard */; };
 		8F342C6B24D4412B000349D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F342C6A24D4412B000349D8 /* Assets.xcassets */; };
 		8F342C6E24D4412B000349D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F342C6C24D4412B000349D8 /* LaunchScreen.storyboard */; };
+		8F342C7E24D44506000349D8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C7D24D44506000349D8 /* API.swift */; };
+		8F342C8024D466B3000349D8 /* Mocky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C7F24D466B3000349D8 /* Mocky.swift */; };
+		8F342C8224D46772000349D8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C8124D46772000349D8 /* ListViewModel.swift */; };
+		8F342C8724D503BD000349D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C8524D503BD000349D8 /* DetailViewController.swift */; };
+		8F342C8824D503BD000349D8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F342C8624D503BD000349D8 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F342C5E24D44129000349D8 /* MockyPDFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockyPDFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F342C6124D44129000349D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F342C6324D44129000349D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F342C6524D44129000349D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F342C6524D44129000349D8 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		8F342C6824D4412A000349D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F342C6A24D4412B000349D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F342C6D24D4412B000349D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F342C6F24D4412B000349D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F342C7D24D44506000349D8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8F342C7F24D466B3000349D8 /* Mocky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocky.swift; sourceTree = "<group>"; };
+		8F342C8124D46772000349D8 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8F342C8524D503BD000349D8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8F342C8624D503BD000349D8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +69,8 @@
 				8F342C7C24D441A8000349D8 /* Applications */,
 				8F342C7B24D4419E000349D8 /* Network */,
 				8F342C7A24D44182000349D8 /* Storyboards */,
-				8F342C7924D44179000349D8 /* Views */,
 				8F342C7824D44174000349D8 /* Models */,
-				8F342C7724D4416C000349D8 /* ViewControllers */,
+				8F342C7724D4416C000349D8 /* View+ViewControllers */,
 				8F342C7624D44165000349D8 /* ViewModel */,
 				8F342C7524D4415A000349D8 /* Resources */,
 			);
@@ -80,30 +89,27 @@
 		8F342C7624D44165000349D8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8F342C8124D46772000349D8 /* ListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		8F342C7724D4416C000349D8 /* ViewControllers */ = {
+		8F342C7724D4416C000349D8 /* View+ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8F342C6524D44129000349D8 /* ViewController.swift */,
+				8F342C6524D44129000349D8 /* ListTableViewController.swift */,
+				8F342C8524D503BD000349D8 /* DetailViewController.swift */,
+				8F342C8624D503BD000349D8 /* DetailViewController.xib */,
 			);
-			path = ViewControllers;
+			path = "View+ViewControllers";
 			sourceTree = "<group>";
 		};
 		8F342C7824D44174000349D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8F342C7F24D466B3000349D8 /* Mocky.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		8F342C7924D44179000349D8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		8F342C7A24D44182000349D8 /* Storyboards */ = {
@@ -118,6 +124,7 @@
 		8F342C7B24D4419E000349D8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8F342C7D24D44506000349D8 /* API.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 				8F342C6E24D4412B000349D8 /* LaunchScreen.storyboard in Resources */,
 				8F342C6B24D4412B000349D8 /* Assets.xcassets in Resources */,
 				8F342C6924D4412A000349D8 /* Main.storyboard in Resources */,
+				8F342C8824D503BD000349D8 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F342C6624D44129000349D8 /* ViewController.swift in Sources */,
+				8F342C8024D466B3000349D8 /* Mocky.swift in Sources */,
+				8F342C6624D44129000349D8 /* ListTableViewController.swift in Sources */,
+				8F342C8224D46772000349D8 /* ListViewModel.swift in Sources */,
 				8F342C6224D44129000349D8 /* AppDelegate.swift in Sources */,
+				8F342C7E24D44506000349D8 /* API.swift in Sources */,
 				8F342C6424D44129000349D8 /* SceneDelegate.swift in Sources */,
+				8F342C8724D503BD000349D8 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +362,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V3Y7678SR;
-				INFOPLIST_FILE = MockyPDFKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MockyPDFKit/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,7 +381,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V3Y7678SR;
-				INFOPLIST_FILE = MockyPDFKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MockyPDFKit/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

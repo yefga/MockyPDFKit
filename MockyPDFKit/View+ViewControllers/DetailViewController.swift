@@ -18,7 +18,7 @@ final class DetailViewModel {
     }
     
     func setupPDF(onComplete: @escaping (PDFDocument) -> ()) {
-
+        
         if let url = URL(string: item.file), let pdfDocument = PDFDocument(url: url) {
             onComplete(pdfDocument)
         }
@@ -26,7 +26,7 @@ final class DetailViewModel {
 }
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var pdfView: PDFView!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var imageView: UIImageView!
@@ -58,32 +58,27 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-
-    @objc fileprivate func toInsertImage(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.mediaTypes = ["public.image"]
-
-        self.present(imagePicker, animated: true) {
-            
-        }
-    }
     
     private func setupUI() {
         setupTitle()
         setupNavigation()
         setupPDFView()
+        setupImageView()
     }
     
-    private func setupTitle() {
+}
+
+fileprivate extension DetailViewController {
+    
+    func setupTitle() {
         self.title = viewModel.item.name
     }
     
-    private func setupPDFView() {
+    func setupPDFView() {
         indicatorView.startAnimating()
         
         DispatchQueue.main.async { [weak self] in
-        
+            
             guard let `self` = self else {return}
             
             self.viewModel.setupPDF { (document) in
@@ -97,9 +92,30 @@ class DetailViewController: UIViewController {
         }
     }
     
-    private func setupNavigation() {
+    func setupNavigation() {
         self.rightBarButtonItem.isEnabled = false
         self.navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    @objc func toInsertImage(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.mediaTypes = ["public.image"]
+        
+        self.present(imagePicker, animated: true)
+    }
+    
+    func setupImageView() {
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(toDragDrop(sender:)))
+        imageView.addGestureRecognizer(panGesture)
+        imageView.isUserInteractionEnabled = true
+    }
+    
+    @objc func toDragDrop(sender: UIPanGestureRecognizer) {
+        self.view.bringSubviewToFront(imageView)
+        let translation = sender.translation(in: self.view)
+        imageView.center = CGPoint(x: imageView.center.x + translation.x, y: imageView.center.y + translation.y)
+        sender.setTranslation(CGPoint.zero, in: self.view)
     }
 }
 

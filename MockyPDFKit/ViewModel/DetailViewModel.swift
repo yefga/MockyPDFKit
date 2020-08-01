@@ -28,7 +28,6 @@ final class DetailViewModel {
     
     func updateAnnotation(from view: PDFView, with image: UIImageView?) {
         
-        print(storedAnnotations.count)
         if let currentPage = view.currentPage, let imageView = image {
             let currentPageHeight = currentPage.bounds(for: .mediaBox).height
 

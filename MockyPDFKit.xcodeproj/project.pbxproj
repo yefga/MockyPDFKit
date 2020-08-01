@@ -18,6 +18,8 @@
 		8F342C8224D46772000349D8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C8124D46772000349D8 /* ListViewModel.swift */; };
 		8F342C8724D503BD000349D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C8524D503BD000349D8 /* DetailViewController.swift */; };
 		8F342C8824D503BD000349D8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F342C8624D503BD000349D8 /* DetailViewController.xib */; };
+		8F342C8A24D57752000349D8 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C8924D57752000349D8 /* DetailViewModel.swift */; };
+		8F342C8C24D57778000349D8 /* ImageStampAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F342C8B24D57778000349D8 /* ImageStampAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		8F342C8124D46772000349D8 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		8F342C8524D503BD000349D8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8F342C8624D503BD000349D8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		8F342C8924D57752000349D8 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		8F342C8B24D57778000349D8 /* ImageStampAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStampAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8F342C8124D46772000349D8 /* ListViewModel.swift */,
+				8F342C8924D57752000349D8 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8F342C6524D44129000349D8 /* ListTableViewController.swift */,
+				8F342C8B24D57778000349D8 /* ImageStampAnnotation.swift */,
 				8F342C8524D503BD000349D8 /* DetailViewController.swift */,
 				8F342C8624D503BD000349D8 /* DetailViewController.xib */,
 			);
@@ -213,10 +219,12 @@
 				8F342C8024D466B3000349D8 /* Mocky.swift in Sources */,
 				8F342C6624D44129000349D8 /* ListTableViewController.swift in Sources */,
 				8F342C8224D46772000349D8 /* ListViewModel.swift in Sources */,
+				8F342C8C24D57778000349D8 /* ImageStampAnnotation.swift in Sources */,
 				8F342C6224D44129000349D8 /* AppDelegate.swift in Sources */,
 				8F342C7E24D44506000349D8 /* API.swift in Sources */,
 				8F342C6424D44129000349D8 /* SceneDelegate.swift in Sources */,
 				8F342C8724D503BD000349D8 /* DetailViewController.swift in Sources */,
+				8F342C8A24D57752000349D8 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
